@@ -14,6 +14,7 @@ import {
 
 const doctorController = {
   store: async (request, response) => {
+    //mudança para testar merge
     const { body } = request;
 
     const doctorSchema = Yup.object().shape({
