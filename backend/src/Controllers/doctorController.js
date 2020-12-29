@@ -18,7 +18,7 @@ const doctorController = {
     const { body } = request;
 
     const doctorSchema = Yup.object().shape({
-      name: Yup.string().required().min(6),
+      name: Yup.string().required().min(),
       email: Yup.string().email().required().min(6),
       password: Yup.string().required().min(6),
     });
