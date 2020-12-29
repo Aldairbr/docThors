@@ -2,6 +2,7 @@
 exports.up = (knex) =>
   knex.schema.createTable('doctors', (table) => {
     table.increments().primary();
+    table.integer('algo');
     table.string('name');
     table.string('email').unique();
     table.string('password');
